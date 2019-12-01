@@ -1,0 +1,12 @@
+#mybutton {
+    position: fixed;
+    bottom: -4px;
+    right: 10px;
+}
+
+.dark,
+.dark.body {
+    background-color: #292929;
+    color: #ffffff;
+    border-color: #ffffff;
+}

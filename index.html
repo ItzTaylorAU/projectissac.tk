@@ -10,10 +10,15 @@
     <link rel="shortcut icon" href="assets/favicon.ico" />
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
     <link href="assets/style.css" rel="stylesheet">
+    <link href="assets/dark.css" rel="stylesheet">
+    <script src="assets/dark.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-switch@2.0.0/dist/css/bulma-switch.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 </head>
 
-<body>
-    <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+<body id="body" class="light">
+    <nav class="navbar is-fixed-top" id="header" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
             <a class="navbar-item" href="/">
                 <img src="assets/logo.png"" width="28" height="28">
@@ -51,6 +56,10 @@
             </div>
         </div>
     </nav>
+    <div id="mybutton">
+
+        <button class="button is-danger">English</button>
+        <button class="button" onclick="toggleDarkLight()">🌓</button>
 </body>
 
 </html>
