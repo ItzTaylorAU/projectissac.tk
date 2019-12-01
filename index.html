@@ -56,10 +56,24 @@
             </div>
         </div>
     </nav>
-    <div id="mybutton">
+    <!--Creates the popup body-->
+    <div class="popup-overlay">
+        <!--Creates the popup content-->
+        <div class="popup-content">
+            <br><br><br><br><br>
+            <div class="notification is-danger">
+                此功能正在進行測試，可能會有漏洞。<br>您要繼續嗎？
+                <button class="button" onclick="yay()"></button>
+                <button class=" button" onclick="nay() "></button>
+            </div>
+        </div>
+    </div>
+    </div>
 
-        <button class="button is-danger">English</button>
-        <button class="button" onclick="toggleDarkLight()">🌓</button>
+    <div id="mybutton ">
+        <button class="button is-danger " href="/en/ ">English</button>
+        <button class="button " onclick="toggleDarkLight() ">🌓</button>
+    </div>
 </body>
 
 </html>
