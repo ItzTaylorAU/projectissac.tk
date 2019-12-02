@@ -6,7 +6,13 @@
 //}
 
 function toggleDarkLight() {
-    $(".popup-overlay, .popup-content").addClass("active");
+    if ($("body").hasClass("dark")) {
+        $("body").removeClass("dark");
+        $("body").addClass("light");
+        $("block").addClass("active");
+    } else {
+        $(".popup-overlay, .popup-content").addClass("active");
+    }
 };
 
 function yay() {
@@ -15,6 +21,7 @@ function yay() {
         $("body").removeClass("light");
         $("body").addClass("dark");
         $("header").addClass("is-dark");
+        $("block").removeClass("active");
     } else if ($("body").addClass("dark")) {
         $("body").removeClass("dark");
         $("body").addClass("light");
@@ -23,4 +30,5 @@ function yay() {
 
 function nay() {
     $(".popup-overlay, .popup-content").removeClass("active");
+    $("block").removeClass("active");
 }

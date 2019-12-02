@@ -18,6 +18,8 @@
 </head>
 
 <body id="body" class="light">
+    <div class="block">
+    </div>
     <nav class="navbar is-fixed-top" id="header" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
             <a class="navbar-item" href="/">
@@ -54,26 +56,32 @@
                     </div>
                 </div>
             </div>
-        </div>
+
     </nav>
     <!--Creates the popup body-->
     <div class="popup-overlay">
         <!--Creates the popup content-->
         <div class="popup-content">
-            <br><br><br><br><br>
-            <div class="notification is-danger">
-                此功能正在進行測試，可能會有漏洞。<br>您要繼續嗎？
-                <button class="button" onclick="yay()"></button>
-                <button class=" button" onclick="nay() "></button>
+            <br><br><br><br><br><br><br><br><br><br>
+            <div class="aolbox">
+                <div class="notification is-danger">
+                    <h3>🌓黑暗模式</h3>
+                    <br> 此功能正在進行測試，可能會有漏洞。
+                    <br>您要繼續嗎？<br>
+                    <br>
+                    <button class="button" onclick="yay()">是的請繼續。</button>
+                    <button class=" button" onclick="nay() ">那麽不用了謝謝。</button>
+
+                </div>
             </div>
         </div>
     </div>
-    </div>
-
-    <div id="mybutton ">
+    <div id="mybutton">
         <button class="button is-danger " href="/en/ ">English</button>
         <button class="button " onclick="toggleDarkLight() ">🌓</button>
     </div>
+    </div>
+
 </body>
 
 </html>
