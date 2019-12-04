@@ -3,3 +3,7 @@
     font-size: 20px;
     font-family: 'Noto Sans TC', sans-serif;
 }
+
+i:hover{
+    text-decoration: none;
+}
