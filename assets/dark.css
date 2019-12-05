@@ -1,4 +1,4 @@
-#mybutton {
+#widget {
     position: fixed;
     bottom: -4px;
     right: 10px;
@@ -47,4 +47,9 @@
 .block.active {
     filter: blur(2px);
     z-index: 2;
+}
+
+a {
+    color: #eeeeee;
+    background-color: #eeeeee;
 }

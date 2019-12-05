@@ -1,5 +1,5 @@
-<html>
-
+<!DOCTYPE HTML>
+<html lang="zh-hk">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,69 +14,87 @@
     <script src="assets/dark.js"></script>
     <script src="assets/style.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-switch@2.0.0/dist/css/bulma-switch.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
-
 <body id="body" class="light">
     <div class="block">
     </div>
     <nav class="navbar is-fixed-top has-shadow" id="header" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
-            <a class="navbar-item" href="/">
-                <img src="assets/logo.png"" width="28" height="28">
-                <p class="header text">&nbsp;艾薩克計劃伺服器</p>
+            <a class="navbar-item bd-navbar-item-documentation  is-active" href="/">
+                <img src="assets/logo.png" width="28" height="28">
+                <p class="header text is-active">&nbsp;艾薩克計劃伺服器</p>
             </a>
-
             <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
             </a>
         </div>
-
         <div id="navbarBasicExample" class="navbar-menu">
             <div class="navbar-start">
-                <a class="navbar-item" href="/">
-                主頁<i class="material-icons">
-                    home
-                </i>
-            </a>
-                <a class="navbar-item" href="/">
-                                簡介<i class="material-icons">
-                    library_books
-                </i>
-                            </a>
+                <a class="navbar-item bd-navbar-item-documentation  is-active" href="/">主頁<i class="material-icons">home</i></a>
+                <a class="navbar-item bd-navbar-item-documentation  is-active" href="/">簡介<i class="material-icons">library_books</i></a>
             </div>
-
             <div class="navbar-end">
                 <div class="navbar-item">
                     <div class="buttons">
-                        <a class="button is-info" href="http://51.79.97.50:21687/">
-                            在綫地圖
-                        </a>
-                        <a class="button is-primary " href="http://intranet.projectissac.tk">
-                            内聯網
-                        </a>
+                        <a class="button is-info" href="http://51.79.97.50:21687/">在綫地圖</a>
+                        <a class="button is-primary " href="http://intranet.projectissac.tk">内聯網</a>
                     </div>
                 </div>
             </div>
+        </div>
     </nav>
-
-
-    <section class="section is-medium css-18nzgp9">
+    <section class="section is-medium css-18nzgp9" style="background-image: url('assets/banner.png'); background-repeat: no-repeat;  background-size: 100% 100%;">
         <div class="container has-text-centered">
             <header class="section-header css-xi606m">
-                <h1 class="title is-spaced is-size-1-mobile has-text-weight-bold css-l85rde"> <p style="font-size:60px;" class="typewrite" data-period="2000" data-type='[ "享受，放鬆，盡在PIS", "艾薩克計劃伺服器" ]'></h1>
-                <p class="subtitle is-size-5 is-size-4-tablet css-1xi27x0">創立自2018年3月19日
-                    <span class="is-block is-size-6 is-size-5-tablet css-w0bcnv"><i>伺服器地址：projectissac.mcnetwork.me</i></span>
-                    <span class="is-size-6 is-size-5-tablet css-rc3cuk" style="display:block;font-size:1rem;margin-top:30px;opacity:0.8"><span class="num">4</span><span class="num">0</span><span class="num">+</span>&nbsp;位玩家</span>
+                <div class="white">
+                <h1 class="title is-spaced is-size-1-mobile has-text-weight-bold css-l85rde"> <p style="font-size:60px; color: white;" class="typewrite" data-period="2000" data-type='[ "享受，放鬆，盡在PIS", "艾薩克計劃伺服器" ]'></h1>
+                <p class="subtitle is-size-5 is-size-4-tablet css-1xi27x0" style="color: white;">創立自2018年3月19日
+                    <span class="is-block is-size-6 is-size-5-tablet css-w0bcnv" style="color: white;"><i>伺服器地址：projectissac.mcnetwork.me</i></span>
+                    <span class="is-size-6 is-size-5-tablet css-rc3cuk" style="display:block;font-size:1rem;margin-top:30px;opacity:0.8; color: white;"><span class="num">4</span><span class="num">0</span><span class="num">+</span>&nbsp;位玩家</span>
                 </p>
+                </div>
+                <br>
+                <button class="button is-rounded" onclick="location.href='https://www.facebook.com/groups/1645010085575276/';">Facebook群組</button>
+                <button class="button is-rounded" onclick="btnscrintro();">瞭解更多</button>
             </header>
         </div>
     </section>
+    <section class="section is-medium css-18nzgp9" id="intro" style="background-color: #eeeeee;">
+        <div class="hero-foot background is-primary is-primary-gradient">
+            <div class="container has-text-centered">
+                <div class="columns is-centered">
+                    <div class="column is-3">
+                        <h3 class="title">伺服器宗旨</h3>
+                        <br>
+                        <h4 class="subtitle is-6">伺服器服主希望大家可以在伺服器游玩時會感到享受以及放鬆。</h4>
+                    </div>
+                    <div class="column is-3">
+                        <h3 class="title">正在成長的社群</h3>
+                        <br>
+                        <h4 class="subtitle is-6">我們擁有超過40個成員，當中包括大約15個活躍成員。</h4>
+                    </div>
+                    <div class="column is-3">
+                        <h3 class="title">不斷的努力</h3>
+                        <br>
+                        <h4 class="subtitle is-6">本伺服器創立自<strong>2018年3月19日</strong>，<br>至今已有<strong><script>datecount();</script></strong>日的歷史。</h4>
+                    </div>
+                </div>
+                <div class="columns is-centered is-hidden-mobile" style="display: none;">
+                    <div class="column is-7 is-active has-text-left">
+                        <h4 class="title is-spaced">mod.io is a cross-platform, lightweight &amp; customizable modding solution that works behind the scenes to power your modding community. <a href="https://mod.io/about">More about us</a>.</h4>
+                        <h5 class="subtitle"><span class="has-text-weight-bold">Publishers &amp; large studios:</span> If you require a private in-house mod platform for your games that accelerates your time to market with a best-in-class product, reach out to discuss our licensed <a href="mailto:developers@mod.io?subject=Need a custom solution">whitelabel solution</a>.</h5>
+                        <br>
+                    </div>
+                </div>
+            </div>
 
+
+        </div>
+    </section>
     <!--Creates the popup body-->
     <div class="popup-overlay">
         <!--Creates the popup content-->
@@ -95,12 +113,10 @@
             </div>
         </div>
     </div>
-    <div id="mybutton">
+    <div id="widget">
         <a class="button is-danger " href="# ">English</a>
         <button class="button " onclick="toggleDarkLight() ">🌓</button>
     </div>
-    </div>
 
 </body>
-
 </html>

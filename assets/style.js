@@ -41,6 +41,30 @@ TxtType.prototype.tick = function() {
     }, delta);
 };
 
+function eject() {
+    if ($("body").hasClass("dark")) {
+        twdark();
+    } else if ($("body").hasClass("light")) {
+        twlight();
+    }
+};
+
+function twdark() {
+    // INJECT CSS
+    var css = document.createElement("style");
+    css.type = "text/css";
+    css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid white}";
+    document.body.appendChild(css);
+};
+
+function twlight() {
+    // INJECT CSS
+    var css = document.createElement("style");
+    css.type = "text/css";
+    css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid white}";
+    document.body.appendChild(css);
+};
+
 window.onload = function() {
     var elements = document.getElementsByClassName('typewrite');
     for (var i = 0; i < elements.length; i++) {
@@ -50,9 +74,26 @@ window.onload = function() {
             new TxtType(elements[i], JSON.parse(toRotate), period);
         }
     }
-    // INJECT CSS
-    var css = document.createElement("style");
-    css.type = "text/css";
-    css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #3f3f3f}";
-    document.body.appendChild(css);
+    eject();
 };
+
+function btnscrintro (){
+        $([document.documentElement, document.body]).animate({
+            scrollTop: $("#intro").offset().top
+        }, 2000);
+}
+
+function datecount () {
+    var today = new Date();
+    var dd = String(today.getDate()).padStart(2, '0');
+    var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+    var yyyy = today.getFullYear();
+
+
+    const oneDay = 24 * 60 * 60 * 1000; // hours*minutes*seconds*milliseconds
+    const firstDate = new Date(2018, 3, 19);
+    const secondDate = new Date(yyyy, mm, dd);
+
+    const diffDays = Math.round(Math.abs((firstDate - secondDate) / oneDay));
+    document.write(diffDays);
+}
